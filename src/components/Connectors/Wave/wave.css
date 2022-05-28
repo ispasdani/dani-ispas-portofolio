@@ -1,0 +1,147 @@
+.flame-animation {
+  height: 40vh;
+  background-color: wheat;
+}
+
+.flame-up {
+  height: 20vh;
+  position: relative;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave1.png");
+  background-size: 1000px 100px;
+}
+
+.waveTwo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave2.png");
+  background-size: 1000px 100px;
+}
+
+.waveThree {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave3.png");
+  background-size: 1000px 100px;
+}
+
+.waveFour {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave4.png");
+  background-size: 1000px 100px;
+}
+
+.wave1 {
+  animation: animate 4s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave2 {
+  animation: animate2 7s linear infinite;
+  z-index: 999;
+  opacity: 1;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wave3 {
+  animation: animate 6s linear infinite;
+  z-index: 998;
+  opacity: 1;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 1;
+  animation-delay: -1s;
+  bottom: 30px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.flame-down {
+  height: 20vh;
+  position: relative;
+}
+
+.wave-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave1.png");
+  background-size: 1000px 100px;
+  transform: rotate(180deg);
+}
+
+.waveTwo-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave2.png");
+  background-size: 1000px 100px;
+  transform: rotate(180deg);
+}
+
+.waveThree-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave3.png");
+  background-size: 1000px 100px;
+  transform: rotate(180deg);
+}
+
+.waveFour-down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../../../assets/flame/wave4.png");
+  background-size: 1000px 100px;
+  transform: rotate(180deg);
+}

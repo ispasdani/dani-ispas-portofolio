@@ -11,7 +11,11 @@ function About() {
 
   return (
     <div className="about" id="1">
-      <img src={topToPixel} className="top-to-pixel" />
+      <img
+        src={topToPixel}
+        className="top-to-pixel"
+        alt="transition-from-smooth-to-pixel"
+      />
 
       <div className="quote">
         <div className="quote-letters">
@@ -128,15 +132,19 @@ function About() {
           {!showTab ? (
             <div className="window-content">
               <div className="image-side">
-                <img src={aboutMeImg} alt="" className="about-me-img" />
+                <img
+                  src={aboutMeImg}
+                  alt="my-face-neon"
+                  className="about-me-img"
+                />
               </div>
               <div className="about-me-side">
                 <h1>Hi, there</h1>
                 <p>
                   My name is{" "}
-                  <a className="attention-name">Ispas Daniel-Nicolae</a> and I'm
-                  a Front-End &#38; Software Developer who's aiming to become a
-                  Full-Stack Developer.
+                  <span className="attention-name">Ispas Daniel-Nicolae</span>
+                  and I'm a Front-End &#38; Software Developer who's aiming to
+                  become a Full-Stack Developer.
                 </p>
                 <p>
                   Long story made short about me. Ex professional tennis player
@@ -223,7 +231,11 @@ function About() {
           </div>
         </div>
       )}
-      <img src={bottomToPixel} className="bottom-to-pixel" />
+      <img
+        src={bottomToPixel}
+        className="bottom-to-pixel"
+        alt="transition-from-pixel-to-smooth"
+      />
     </div>
   );
 }

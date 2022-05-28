@@ -57,7 +57,7 @@ function Navbar() {
               >
                 <a href="#3">CONTACT</a>
               </h1>
-              <img src={meImg} />
+              <img src={meImg} alt="my-potrait-but-pixelated" />
             </div>
           </div>
         </>

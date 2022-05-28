@@ -13,9 +13,21 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 function Home() {
   return (
     <div className="home">
-      <img src={sideMountains} alt="" className="side-mountains" />
-      <img src={homeMessage} alt="" className="home-message" />
-      <img src={triangleHome} alt="" className="triangle-home" />
+      <img
+        src={sideMountains}
+        alt="mountains-background"
+        className="side-mountains"
+      />
+      <img
+        src={homeMessage}
+        alt="welcoming-message-retro"
+        className="home-message"
+      />
+      <img
+        src={triangleHome}
+        alt="triangel-effect-for-message"
+        className="triangle-home"
+      />
       <Navbar />
       <div className="home-content">
         <div className="left-side">
@@ -53,19 +65,31 @@ function Home() {
           </div>
         </div>
         <div className="right-side">
-          <a className="icons facebook-icon">
+          <a
+            className="icons facebook-icon"
+            href="https://www.facebook.com/ispas.dani14/"
+          >
             <FacebookIcon />
           </a>
-          <a className="icons github-icon">
+          <a className="icons github-icon" href="https://github.com/ispasdani">
             <GitHubIcon />
           </a>
-          <a className="icons linkedin-icon">
+          <a
+            className="icons linkedin-icon"
+            href="https://www.linkedin.com/in/dani-ispas/"
+          >
             <LinkedInIcon />
           </a>
-          <a className="icons instagram-icon">
+          <a
+            className="icons instagram-icon"
+            href="https://www.instagram.com/ispasdani/"
+          >
             <InstagramIcon />
           </a>
-          <a className="icons twitter-icon">
+          <a
+            className="icons twitter-icon"
+            href="https://twitter.com/IspasDaniel14"
+          >
             <TwitterIcon />
           </a>
         </div>

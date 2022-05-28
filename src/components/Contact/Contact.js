@@ -21,7 +21,11 @@ function Contact() {
 
   return (
     <div className="contact-section" id="3">
-      <img src={topToPixel} className="top-to-pixel" />
+      <img
+        src={topToPixel}
+        className="top-to-pixel"
+        alt="transition-from-smooth-to-pixel"
+      />
 
       <div className="contact-title">
         <p className="contact-glitch">

@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <h2>DANNI.</h2>
+      <div className="lds-dual-ring"></div>
       {!showMenu ? (
         <div
           className="hamburger-not-active"

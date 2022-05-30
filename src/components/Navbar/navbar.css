@@ -10,8 +10,34 @@
   z-index: 10;
 }
 
-.navbar h2 {
-  margin: 0px 20px;
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:hover::after {
+  border: 6px solid #ff10f0;
+  border-color: #ff10f0 transparent #ff10f0 transparent;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 15px 20px;
+  border-radius: 50%;
+  border: 6px solid #51fcff;
+  border-color: #51fcff transparent #51fcff transparent;
+  animation: lds-dual-ring 1.5s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hamburger-not-active {

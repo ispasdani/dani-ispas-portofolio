@@ -121,14 +121,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 20%;
+  width: 25%;
 }
 
 .window-left-side {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 75%;
 }
 
 .window-left-side p {
@@ -298,6 +298,59 @@
   height: 80px;
 }
 
+.resume-button {
+  margin-right: 20px;
+  padding: 5px 15px;
+  border: 3px solid #51fcff;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.resume-button a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.resume-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.resume-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.resume-button:hover {
+  transform: scale(1.1);
+}
+
+.resume-button::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #ff10f0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
 @media only screen and (max-width: 865px) {
   .window-content {
     flex-direction: column;
@@ -348,7 +401,7 @@
 
 @media only screen and (max-width: 550px) {
   .about-me-side {
-    width: 80%;
+    width: 85%;
   }
 }
 

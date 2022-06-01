@@ -9,8 +9,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import DownloadIcon from "@mui/icons-material/Download";
-import myResume from "../../assets/myResume.pdf";
 
 function Home() {
   return (
@@ -63,14 +61,6 @@ function Home() {
             </p>
             <p>
               <a href="#1">Connect With Me</a>
-            </p>
-            <p>
-              <a href={myResume} download>
-                My Resume
-                <span>
-                  <DownloadIcon />
-                </span>
-              </a>
             </p>
           </div>
         </div>

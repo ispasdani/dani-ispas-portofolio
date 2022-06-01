@@ -4,6 +4,8 @@ import topToPixel from "../../assets/topToPixel.png";
 import bottomToPixel from "../../assets/bottomToPixel.png";
 import aboutMeImg from "../../assets/meGreen.png";
 import folderIcon from "../../assets/folder.png";
+import DownloadIcon from "@mui/icons-material/Download";
+import myResume from "../../assets/myResume.pdf";
 
 function About() {
   const [showTab, setShowTab] = useState(false);
@@ -163,6 +165,14 @@ function About() {
                   UI/UX Designer. On top of that I added technologies like HTML,
                   CSS and Javascript. From that moment to present all my
                   attention was on Web Development.
+                </p>
+                <p className="resume-button">
+                  <a href={myResume} download>
+                    My Resume
+                    <span>
+                      <DownloadIcon />
+                    </span>
+                  </a>
                 </p>
               </div>
             </div>

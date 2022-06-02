@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./about.css";
 import topToPixel from "../../assets/topToPixel.png";
 import bottomToPixel from "../../assets/bottomToPixel.png";
@@ -6,9 +6,6 @@ import AboutFolder from "../AboutFolder/AboutFolder";
 import SkillsFolder from "../SkillsFolder/SkillsFolder";
 
 function About() {
-  const [showTab, setShowTab] = useState(false);
-  const [closeOpenWindow, setCloseOpenWindow] = useState(false);
-
   return (
     <div className="about" id="1">
       <img

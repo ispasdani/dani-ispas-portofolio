@@ -44,6 +44,14 @@
   flex-direction: column;
 }
 
+.container-size {
+  width: 100%;
+  max-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reference {
   display: flex;
   align-self: flex-end;
@@ -81,6 +89,7 @@
 .browser-window {
   width: 80%;
   height: 600px;
+  margin: 20px 0px;
   border-left: 3px solid;
   border-right: 3px solid;
   border-bottom: 3px solid;
@@ -262,7 +271,7 @@
 
 .folders-container {
   width: 80%;
-  height: 600px;
+  height: 150px;
 }
 
 .folder-format {
